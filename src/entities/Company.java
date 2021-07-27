@@ -30,4 +30,11 @@ public class Company extends Taxpayer{
 			return annualIncome * 0.16;
 		}
 	}
+	
+	public String toString() {
+		return name
+				+ ": $ "
+				+ String.format("%.2f", totalTaxes());
+	}
+	
 }

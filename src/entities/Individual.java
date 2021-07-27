@@ -29,4 +29,11 @@ public class Individual extends Taxpayer{
 			return (annualIncome * 0.25) - (healtcareExpenses * 0.5);
 		}
 	}
+	
+	public String toString() {
+		return name
+				+ ": $ "
+				+ String.format("%.2f", totalTaxes());
+	}
+	
 }
